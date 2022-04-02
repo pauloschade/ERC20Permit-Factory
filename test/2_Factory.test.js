@@ -7,7 +7,7 @@ contract('PermitFactory', function (accounts) {
     var factory;
 
     beforeEach(async function () {
-        factory = await PermitFactory.deployed();
+        factory = await PermitFactory.new();
     });
 
     describe("token creation", () => {
